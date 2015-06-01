@@ -1,12 +1,12 @@
 (
 	{
-		Identifier = "com.brew.compilers.llvm.clang.1_0";
+		Identifier = "com.brew.compilers.llvm.clang.3_7";
 		Type = Compiler;
 		Class = "XCCompilerSpecificationClang";
-		Name = "Brew LLVM Trunk";
-		Description = "Brew LLVM Trunk compiler";
+		Name = "LLVM 3.7";
+		Description = "LLVM 3.7 compiler";
 		Vendor = Brew;
-		Version = "5.0";
+		Version = "3.7";
 		IsAbstract = NO;
 		"ShowInCompilerSelectionPopup" = YES;
 		FileTypes = (
@@ -21,7 +21,7 @@
 			sdk,
 		);
 		"BuiltinJambaseRuleName" = ProcessC;
-		ExecPath = "/usr/local/bin/clang";
+		ExecPath = "/usr/local/opt/llvm/bin/clang";
 		ExecDescription = "Compile $(InputFile)";
 		ProgressDescription = "Compiling $(CommandProgressByType) source files";
 		"ExecDescriptionForPrecompile" = "Precompile $(InputFile)";
@@ -2223,11 +2223,11 @@
 		);
 	},
 	{
-		Identifier = "com.brew.compilers.llvm.clang.1_0.compiler";
+		Identifier = "com.brew.compilers.llvm.clang.3_7.compiler";
 		Type = Compiler;
-		BasedOn = "com.brew.compilers.llvm.clang.1_0";
-		Name = "Brew LLVM Trunk";
-		Description = "Brew LLVM Trunk compiler";
+		BasedOn = "com.brew.compilers.llvm.clang.3_7";
+		Name = "LLVM 3.7";
+		Description = "LLVM 3.7 Compiler";
 		IsAbstract = YES;
 		"ShowInCompilerSelectionPopup" = NO;
 		Architectures = (
@@ -2243,7 +2243,7 @@
 		FallbackTools = (
 			"com.apple.compilers.llvmgcc42",
 		);
-		"ExecCPlusPlusLinkerPath" = "/usr/local/bin/clang++";
+		"ExecCPlusPlusLinkerPath" = "/usr/local/opt/llvm/bin/clang++";
 		"SupportsGeneratePreprocessedFile" = YES;
 		"SupportsGenerateAssemblyFile" = YES;
 		"CommandResultsPostprocessor" = "XCClangResultsPostprocessor";
@@ -2257,11 +2257,11 @@
 		);
 	},
 	{
-		Identifier = "com.brew.compilers.llvm.clang.1_0.analyzer";
+		Identifier = "com.brew.compilers.llvm.clang.3_7.analyzer";
 		Type = Compiler;
-		BasedOn = "com.brew.compilers.llvm.clang.1_0";
+		BasedOn = "com.brew.compilers.llvm.clang.3_7";
 		Name = "Static Analyzer";
-		Description = "Brew Clang Static Analyzer";
+		Description = "Clang 3.7 Static Analyzer";
 		Architectures = (
 			i386,
 			"x86_64",
@@ -2837,11 +2837,11 @@
 		);
 	},
 	{
-		Identifier = "com.brew.compilers.llvm.clang.1_0.migrator";
+		Identifier = "com.brew.compilers.llvm.clang.3_7.migrator";
 		Type = Compiler;
-		BasedOn = "com.brew.compilers.llvm.clang.1_0";
+		BasedOn = "com.brew.compilers.llvm.clang.3_7";
 		Name = "ObjC Migrator";
-		Description = "Brew Clang ObjC Migrator";
+		Description = "Clang 3.7 ObjC Migrator";
 		Architectures = (
 			i386,
 			"x86_64",
@@ -3035,11 +3035,11 @@
 		);
 	},
 	{
-		Identifier = "com.brew.compilers.llvm.clang.1_0.migrator.xctest";
+		Identifier = "com.brew.compilers.llvm.clang.3_7.migrator.xctest";
 		Type = Compiler;
-		BasedOn = "com.brew.compilers.llvm.clang.1_0";
+		BasedOn = "com.brew.compilers.llvm.clang.3_7";
 		Name = "XCTest Migrator";
-		Description = "Brew Clang XCTest Migrator";
+		Description = "Clang 3.7 XCTest Migrator";
 		Architectures = (
 			i386,
 			"x86_64",
@@ -3068,11 +3068,11 @@
 		);
 	},
 	{
-		Identifier = "com.brew.compilers.llvm.clang.1_0.astbuilder";
+		Identifier = "com.brew.compilers.llvm.clang.3_7.astbuilder";
 		Type = Compiler;
-		BasedOn = "com.brew.compilers.llvm.clang.1_0";
+		BasedOn = "com.brew.compilers.llvm.clang.3_7";
 		Name = "AST Builder";
-		Description = "Brew Clang AST Builder 1.0";
+		Description = "Clang 3.7 AST Builder 1.0";
 		FileTypes = (
 			"sourcecode.c.c",
 			"sourcecode.c.objc",
