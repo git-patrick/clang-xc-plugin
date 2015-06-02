@@ -2268,7 +2268,7 @@
 			armv6,
 			armv7,
 		);
-		ExecPath = "$(CLANG_ANALYZER_EXEC)";
+		ExecPath = "/usr/local/opt/llvm/bin/clang";
 		RuleName = "Analyze$(CLANG_STATIC_ANALYZER_MODE_ACTION_$(CLANG_STATIC_ANALYZER_MODE)) $(InputFile)";
 		ExecDescription = "Analyze$(StaticAnalyzerModeNameDescription) $(InputFile)";
 		ProgressDescription = "Analyzing$(StaticAnalyzerModeNameDescription) $(CommandProgressByType) source files";
